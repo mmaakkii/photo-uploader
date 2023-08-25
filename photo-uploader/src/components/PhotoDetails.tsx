@@ -48,6 +48,7 @@ export const PhotoDetails = (): JSX.Element => {
         const { success, comments } = response.data
         if (success) {
           setCommentsList(comments)
+          setCommentText('')
         }
       } catch (err) {
         console.log(err)
